@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover em css</title>
+    <style>
+
+        div{
+            background-color: blue;
+            height: fit-content;
+            width: fit-content;
+        }
+
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+
+        }
+        div:hover{
+            color: RED;
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo sobte hover</h1>
+    <p>passa o mouse aqui em baixo</p>
+    <div>passe o mouse aqui
+        <P>PARAGRAFO, ECONDIDO.......</P>
+    </div>
+    <p>fim do exemplo</p>
+    
+</body>
+</html>

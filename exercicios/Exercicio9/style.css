@@ -1,0 +1,24 @@
+@charset "UTF-8";
+main{
+
+font-family: Helvetica, sans-serif;
+text-align: center;
+
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: 5px 2px 3px;
+    background-image: linear-gradient(to bottom, red, rgb(216, 19, 61));
+    margin: auto;
+}
+        body{
+            background-image: linear-gradient(to bottom,black, blue);
+            background-attachment: fixed;
+        }
+        h1{
+            font-family: Dynapuff;
+        }
+        h2{
+            font-family: DynaPuff;
+        }

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*Tudo em html id vira # em css
+e tudo que é class em html no css vira .
+*/
+
+
+body {
+    background-color: #b0ff61;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(255, 166, 0);
+}
+
+h1#principal{
+    text-align: center;
+    background-color: darkblue;
+}
+
+.basico{
+    color: blueviolet;
+}
+.intermediario{
+    color: yellow;
+}
+
+h2{
+    color: blue;
+}

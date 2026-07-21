@@ -1,0 +1,29 @@
+@chatset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+}
+body{
+    height: 100%;
+    background-image: linear-gradient(to bottom, #008AE6,#003D67);
+}
+p{
+    text-align: justify;
+}
+main{
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #000000;
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+h1{
+    color: orangered;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+}
+h2{
+    color: orangered
+}
