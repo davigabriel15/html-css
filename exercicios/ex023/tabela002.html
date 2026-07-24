@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+        thead{
+            border-collapse: collapse;
+            background-color: gray;
+            color: rgb(7, 0, 0);
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: lightgray;
+        }
+        th{
+            border: 1px solid black;
+            background-color: gray;
+        }
+
+        td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas Grandes</h1>
+    <!-- 
+    Anatomia para Tabelas grandes
+    Table
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das unidades Federativas</caption>
+    <thead>
+        <tr>
+        <th scope="col">Estado</th>
+        <th>Capital</th>
+        <th scope="row">População (2026)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>São Paulo</td>
+        <td>São Paulo</td>
+        <td>46.1 milhões</td>
+        </tr>
+        <tr>
+        <td>Minas Gerais</td>
+        <td>Belo Horizonte</td>
+        <td>21.4 milhões</td>
+        </tr>
+        <tr>
+        <td>Rio de Janeiro</td>
+        <td>Rio de Janeiro</td>
+        <td>17.4 milhões</td>
+        </tr>
+        <tr>
+        <td>Bahia</td>
+        <td>Salvador</td>
+        <td>14.9 milhões</td>
+        </tr>
+        <tr>
+        <td>Paraná</td>
+        <td>Curitiba</td>
+        <td>11.6 milhões</td>
+        </tr>
+        <tr>
+        <td>Rio Grande do Sul</td>
+        <td>Porto Alegre</td>
+        <td>11.4 milhões</td>
+        </tr>
+        <tr>
+        <td>Pernambuco</td>
+        <td>Recife</td>
+        <td>9.6 milhões</td>
+        </tr>
+        <tr>
+        <td>Ceará</td>
+        <td>Fortaleza</td>
+        <td>9.1 milhões</td>
+        </tr>
+        <tr>
+        <td>Pará</td>
+        <td>Belém</td>
+        <td>8.6 milhões</td>
+        </tr>
+        <tr>
+        <td>Santa Catarina</td>
+        <td>Florianópolis</td>
+        <td>7.2 milhões</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <th scope="row">País/Ano</th>
+        <td>Brasil</td>
+        <td>2026</td>
+    </tfoot>
+    </table>
+    
+</body>
+</html>
