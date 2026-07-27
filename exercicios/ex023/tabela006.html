@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Muito Larga</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .container{
+            overflow-x: auto; /* adiciona scroll horizontal */
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 3000px; /* força a tabela a ser bem larga */
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            min-width: 200px; /* cada coluna fica larga */
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tabela Muito Larga e Cheia de Itens</h2>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Coluna 1</th>
+                    <th>Coluna 2</th>
+                    <th>Coluna 3</th>
+                    <th>Coluna 4</th>
+                    <th>Coluna 5</th>
+                    <th>Coluna 6</th>
+                    <th>Coluna 7</th>
+                    <th>Coluna 8</th>
+                    <th>Coluna 9</th>
+                    <th>Coluna 10</th>
+                    <th>Coluna 11</th>
+                    <th>Coluna 12</th>
+                    <th>Coluna 13</th>
+                    <th>Coluna 14</th>
+                    <th>Coluna 15</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- várias linhas para preencher -->
+                <tr>
+                    <td>Item A1</td><td>Item A2</td><td>Item A3</td><td>Item A4</td><td>Item A5</td>
+                    <td>Item A6</td><td>Item A7</td><td>Item A8</td><td>Item A9</td><td>Item A10</td>
+                    <td>Item A11</td><td>Item A12</td><td>Item A13</td><td>Item A14</td><td>Item A15</td>
+                </tr>
+                <tr>
+                    <td>Item B1</td><td>Item B2</td><td>Item B3</td><td>Item B4</td><td>Item B5</td>
+                    <td>Item B6</td><td>Item B7</td><td>Item B8</td><td>Item B9</td><td>Item B10</td>
+                    <td>Item B11</td><td>Item B12</td><td>Item B13</td><td>Item B14</td><td>Item B15</td>
+                </tr>
+                <tr>
+                    <td>Item C1</td><td>Item C2</td><td>Item C3</td><td>Item C4</td><td>Item C5</td>
+                    <td>Item C6</td><td>Item C7</td><td>Item C8</td><td>Item C9</td><td>Item C10</td>
+                    <td>Item C11</td><td>Item C12</td><td>Item C13</td><td>Item C14</td><td>Item C15</td>
+                </tr>
+                <tr>
+                    <td>Item D1</td><td>Item D2</td><td>Item D3</td><td>Item D4</td><td>Item D5</td>
+                    <td>Item D6</td><td>Item D7</td><td>Item D8</td><td>Item D9</td><td>Item D10</td>
+                    <td>Item D11</td><td>Item D12</td><td>Item D13</td><td>Item D14</td><td>Item D15</td>
+                </tr>
+                <tr>
+                    <td>Item E1</td><td>Item E2</td><td>Item E3</td><td>Item E4</td><td>Item E5</td>
+                    <td>Item E6</td><td>Item E7</td><td>Item E8</td><td>Item E9</td><td>Item E10</td>
+                    <td>Item E11</td><td>Item E12</td><td>Item E13</td><td>Item E14</td><td>Item E15</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
