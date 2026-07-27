@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicíos de Tabelas</title>
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th{
+            width: 100px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            width: 100px;
+            border: 1px solid black;
+            border-collapse: collapse; 
+            text-align: center;           
+        }
+        col.cnomes{
+            background-color: blue;
+        }
+        col.cidade{
+            background-color: red;
+        }
+        col.csexo{
+            background-color:  yellow;
+        }
+        col.cprofissao{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicío de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnomes">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
+        </colgroup>
+        <caption> Cadastro </caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>jornalista</td>
+        </tr>
+
+        <tr>
+            <td>César</td>
+            <td>m</td>
+            <td>29</td>
+            <td>Mecanico</td>
+        </tr>
+
+        <tr>
+            <td>Carlos</td>
+            <td>m</td>
+            <td>19</td>
+            <td>Médico</td>
+        </tr>        
+    </table>
+    
+</body>
+</html>
