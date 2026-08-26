@@ -8,7 +8,7 @@
         div.container{
             background-color: lightsalmon;
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
         }
         div.item{
             background-color: lightskyblue;
@@ -16,17 +16,27 @@
             text-align: center;
             flex: auto;
             flex-basis: 250px;
+        }
+        div#cxA{
             flex-shrink: 1;
             flex-grow: 1;
+        }
+        div#cxB{
+            flex-grow: 4;
+            flex-shrink: 1;
+        }
+        div#cxC{
+            flex-grow: 1;
+            flex-shrink: 4;
         }
     </style>
 </head>
 <body>
     <div class="container">
 
-        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor facilis optio iusto ad. Sint, repellat animi quidem laborum voluptatem inventore nulla, debitis iusto aspernatur minus eius est dolorem placeat consequatur?</div>
-        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam distinctio expedita quo quis rerum ratione repudiandae veniam accusantium voluptatem, natus eius provident. Ab facilis ex, iste quas animi voluptate quod.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates ut voluptatum iure cum quia soluta exercitationem deleniti praesentium minima? Natus tenetur sit quis cumque quae, quibusdam reiciendis ullam ducimus enim.</div>
-        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut quo soluta asperiores dolorum. Labore quas repudiandae facilis, accusamus ratione beatae aliquid officia eos, aliquam quam corporis tempora! Ipsam, nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nostrum illo unde quae est iure voluptate quas cupiditate iste. Quo consequatur necessitatibus sequi impedit dolore vitae iste quisquam quaerat molestias! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima sapiente commodi earum nulla magni odit qui non suscipit. Minima explicabo reprehenderit nemo quas atque libero eos similique enim dolorem tempora.</div>
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
     </div>
     
 </body>
