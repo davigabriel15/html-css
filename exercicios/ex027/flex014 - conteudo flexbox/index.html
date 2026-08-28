@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteudo Flexbox</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header, footer{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        header > h1, p{
+            margin-bottom: 20px;
+        }
+        section{
+            padding: 20px;
+            background-color: lightgrey;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        img{
+            width: 300px;
+        }
+        main{
+            background-color: lightgrey;
+        }
+        section > p{
+            margin-right: 10px;
+            flex-basis: 1200px;
+        }
+        iframe{
+            width: 100%;
+        }
+        @media screen and (max-width: 990px) {
+            section{
+                flex-flow: row wrap;
+            }
+            #img1{
+                order: 0;
+                margin-bottom: 20px;
+            }
+            #text1{
+                order: 1;
+
+            }
+            #txt2{
+                order: 2;
+            }
+            #yt1{
+                order: 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de Conteúdo Flexível</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ratione ut distinctio, eaque dolores quisquam atque accusamus, harum numquam quas pariatur expedita exercitationem voluptatibus praesentium? Dolores, corrupti quisquam. Eaque, facere!</p>
+    </header>
+    <main>
+        <h1>Elemento Media > Text</h1>
+        <section>
+            <p id="text1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui sit earum quos nihil, deserunt corporis laboriosam, dolore aperiam incidunt exercitationem veniam deleniti, nulla perferendis facere dolorem maiores porro veritatis inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium repellat nobis praesentium? Eos corporis facilis, debitis odio fugit possimus quo, reiciendis voluptatem quasi veritatis ullam quibusdam excepturi! In, neque.
+            </p>
+            <img src="https://ravel.com.br/blog/wp-content/uploads/2023/02/Tendencias-de-tecnologia-2023-Capa.jpg" id="img1">
+        </section>
+        <h1>Elemento Text > Media</h1>
+        <section>
+            <p id="txt2">Lorem ipsum dolor sit amet consectetur adipisicing elit. At totam repudiandae praesentium dolores. Possimus, unde quaerat facere quibusdam velit expedita? Expedita sint quo dolore quasi itaque, eos aliquam vel culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi illo praesentium rerum similique autem laudantium obcaecati quisquam ullam laborum aliquam perspiciatis eos architecto iure animi labore, nulla qui id? Hic?</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0f-INyxbsQA?si=pmJ9BJ36yu5bQxCW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="yt1"></iframe>
+        </section>
+    </main>
+    <footer>
+        <h1>Conteudo Normal</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla exercitationem laudantium quas eum voluptas totam, vero reprehenderit necessitatibus officiis! Molestias, voluptates. Inventore debitis perspiciatis facere soluta sint officiis, laborum hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae atque eveniet sunt magni mollitia ullam asperiores ad voluptate! Quam quo rerum aspernatur deleniti, commodi ut aliquam voluptate dolorem repellendus architecto?</p>
+    </footer>
+</body>
+</html>
