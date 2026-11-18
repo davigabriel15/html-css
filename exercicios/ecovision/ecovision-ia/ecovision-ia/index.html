@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EcoVision IA — Lixeira Inteligente</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Cabeçalho -->
+<header class="top">
+  <div class="brand">
+    <span class="logo">♻</span>
+    <div><h1>EcoVision <b>IA</b></h1><p>O descarte certo começa com uma visão inteligente.</p></div>
+  </div>
+  <div class="pill" id="pill"><i></i><span id="status">Sistema em espera</span></div>
+</header>
+
+<div class="notice">⚠ Demonstração simulada: a classificação é predefinida pelo objeto escolhido. Nenhuma câmera ou modelo de IA real está conectado.</div>
+
+<main>
+  <!-- Composição: scanner + esteira + 6 lixeiras -->
+  <section class="stage" id="stage" aria-label="Esteira, scanner e lixeiras">
+    <div class="entry">ENTRADA ▶</div>
+    <div class="scanner" id="scanner">
+      <div class="cam">📷<small>IA (simulada)</small></div>
+      <div class="beam"></div><div class="line"></div><div class="frame"></div>
+    </div>
+    <div class="belt stop" id="belt"></div>
+    <div class="bins" id="bins"></div>
+  </section>
+
+  <section class="low">
+    <!-- Simulador -->
+    <div class="card">
+      <h2>Simulador</h2>
+      <div class="picks" id="picks"></div>
+      <button class="go" id="go">▶ Iniciar triagem</button>
+      <button class="ghost" id="reset">Zerar contadores</button>
+    </div>
+    <!-- Painel de controle -->
+    <div class="card">
+      <h2>Painel de controle</h2>
+      <div class="kv">
+        <div><small>Status do sistema</small><b id="stat">Aguardando resíduo</b></div>
+        <div><small>Material identificado</small><b id="mat">—</b></div>
+        <div><small>Resultado da classificação</small><b id="res">—</b></div>
+        <div><small>Total de resíduos separados</small><b id="total" class="num">0</b></div>
+      </div>
+      <ol class="steps" id="steps">
+        <li>Entrada na esteira</li><li>Parada no scanner</li><li>Análise da câmera (simulada)</li><li>Identificação</li><li>Encaminhamento à lixeira</li>
+      </ol>
+      <div class="minis" id="minis"></div>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
